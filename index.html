@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+</head>
+<body >
+  <style>
+    body{
+      background-color: aquamarine;
+    }
+    h1{
+      color:red;
+    }
+  </style>
+  <h1>Task of JavaScript</h1>  
+</body>
+<script>
+    // question 1
+    let name = "1.)SANTOSH PASWAN";
+let address = "MUZAFFARPUR , BIHAR";
+
+
+document.writeln(name);
+document.writeln(address);
+
+// question 2
+let a = 5;
+let b = "5";
+
+if (a === b) {
+  document.writeln("<br>2.)value and data type are same");
+} else {
+  document.writeln("<br>2.)value and data type are different");
+}
+
+// question 3
+let str1 = "hello";
+let str2 = "world";
+let result = (str1 + " " +str2).toUpperCase();
+
+document.writeln("<br>3.)Result:", result);
+
+
+
+//question 4
+
+function stringsizeinbytes(str) {
+    const blob = new Blob([str]);
+    return blob.size;
+  }
+  
+  
+  const inputString = "Santosh Paswan";
+  const sizeInBytes = stringsizeinbytes(inputString);
+  document.writeln(`<br>4.)The size of the string "${inputString}" is ${sizeInBytes} bytes.`);
+
+
+
+
+// question 5
+function roundToDigits(num, digits) {
+    const factor = Math.pow(10, digits);
+    return Math.round(num * factor) / factor;
+  }
+  
+
+  const number = 12.34567;
+  const roundedNumber = roundToDigits(number, 3);
+  document.writeln("<br>5.)",roundedNumber); 
+  
+
+</script>
+</html>
